@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div id="card">
+        <div id="left">
+        </div>
+        <form action="https://www.googl.com/">
+            <h2>Registration Form</h2>
+
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <section><label for="fname">First name </label>
+                <input name="FirstName" type="text" id="fname" placeholder="enter your name"></section>
+
+                <section><label for="lname">Last name </label>
+                <input name="FirstName" type="text" id="lname" placeholder="enter your last name"></section>
+
+                <section><label for="bdate">Date of birth </label>
+                <input type="date" id="bdate" min="1900-01-01" max="2000-12-31"></section>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Info
+                </legend>
+
+                <section id="street-section">
+                    <label for="street">Street </label>
+                    <input type="text" name="street" id="street" placeholder="enter your street">
+                </section>
+
+                <section id="houseno-section">
+                    <label for="houseno">House No. </label>
+                    <input type="text" name="housenumber" id="houseno" placeholder="number" min="1" max="5">
+                </section>
+
+                <section>
+                    <label for="postcode">Postcode </label>
+                    <input type="number" name="postcode" id="postcode" placeholder="enter your postcode" maxlength="5">
+                </section>
+
+
+                <section>
+                    <label for="city">City </label>
+                    <select name="city" id="city" placeholder="choose your city">
+                        <option value="" disabled selected id="city-placeholder">select your city</option>
+
+                        <optgroup label="BER">
+                        <option value="Berlin">Berlin</option>
+                        </optgroup>
+                        
+                        <optgroup label="BY">
+                        <option value="München">München</option>
+                        <option value="Nürnberg">Nürnberg</option>
+                        </optgroup>
+                        
+                        <optgroup label="BW">
+                        <option value="Ulm">Ulm</option>
+                        </optgroup>
+                        
+                        <optgroup label="NRW">
+                        <option value="Düsseldorf">Düsseldorf</option>
+                        <option value="Neuss">Neuss</option>
+                        </optgroup>
+                    </select>
+                </section>
+
+                <section><label for="phoneno">Phone Number </label>
+                <input type="tel" name="phoneno" id="phoneno" placeholder="add your phone number"></section>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Account</legend>
+
+                <section><label for="email">email: </label>
+                <input name="email" id="email" type="email" placeholder="sample@sample.com"></section>
+
+                <section><label for="pass">Password: </label>
+                <input name="pass" id="pass" type="password" placeholder="minimum 8 characters"></section>
+            </fieldset>
+
+
+            <!-- best case -->
+            
+                <input type="submit" value="Submit" id="send-button">
+            
+            <!-- worst case - they all work! -->
+            <!-- <button>With Submit Button</button>
+            <button>With Another Submit Button</button> -->
+        </form>
+    </div>
+</body>
+</html>
